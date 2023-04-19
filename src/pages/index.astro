@@ -1,0 +1,32 @@
+---
+// Component Imports
+import Button from '../components/Button.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+import "../styles/styles.css";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+
+<MainLayout title="hej">
+    <div class="card-gallery">
+      <div class="card" data-id="1">
+        <img src="path/to/image1.jpg" alt="Card 1" />
+        <p>Card 1</p>
+      </div>
+      <div class="card" data-id="2">
+        <img src="path/to/image2.jpg" alt="Card 2" />
+        <p>Card 2</p>
+      </div>
+      <div class="card" data-id="3">
+        <img src="path/to/image2.jpg" alt="Card 3" />
+        <p>Card 3</p>
+      </div>
+      <!-- Add more cards here -->
+    </div>
+    <button id="view-selected" class="hidden">View Selected Cards</button>
+</MainLayout>
+
+
+
